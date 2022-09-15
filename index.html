@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      href="https://img.icons8.com/office/16/000000/musical-notes.png"
+    />
+    <title>Music App</title>
+  </head>
+  <body>
+    <section id="main-Container">
+      <header>
+        <span id="song-title">Title Name</span>
+      </header>
+      <div class="music-pic-container">
+        <img id="background-img" src="/assests/bg.jpg" alt="" />
+      </div>
+      <div class="song-duration">
+        <div id="current-time-container">
+          <span class="start-time" id="start-time">0:00</span>
+        </div>
+        <input type="range" id="seek-slider" max="100" value="0" />
+        <div id="seek-time-container">
+          <span class="seek-time" id="seek-time">0:00</span>
+        </div>
+      </div>
+      <div class="control-buttons-wrap">
+        <div class="backward-btn" id="backward"></div>
+        <div class="pause-play-btn" id="play-pause"></div>
+        <div class="forward-btn" id="forward"></div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
